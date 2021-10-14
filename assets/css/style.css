@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+/*font-family: 'Montserrat Alternates', sans-serif;*/
+
+/*=======================
+        GENERAL
+========================*/        
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, p, h2, a, li{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/*=======================
+        Hero Page
+========================*/
+
+nav{
+    background: RGBA(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0vh;
+    bottom: 0vh;
+}
+
+nav>h2{
+    display: inline;
+    padding-left: 3vw;
+    padding-right: 45vw;
+}
+
+nav>ul{
+    display: inline;
+}
+
+nav>ul>li{
+    display: inline-block;
+    padding: 2vh 3vw;
+}
+
+/*=======================
+        Hero Page
+========================*/  
+
+header{
+    background: url("../img/BG_Bike.jpeg") center/cover no-repeat;
+}
+
+header>h1{
+    padding: 45vh 0vw 5vh 9vw;
+}
+
+header>p{
+    padding: 0vh 0vw 44vh 5vw;
+}
+
+/*=======================
+        Locations
+========================*/
+
+main{
+    text-align: center;
+}
+
+main>h2:first-child{
+    padding-top: 10vh;
+}
+
+main>p{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+main>div>img{
+    height: 25vh;
+    width: 32vw;
+    object-fit: cover;
+    padding: 1.25%;
+}
+
+/*==================
+     Tour Dates
+===================*/ 
+
+main>h2:nth-of-type(2){
+    padding: 5vh 0px;
+}
+
+main>ul{
+    text-align: left;
+    text-indent: 5%;
+}
+
+main>ul>li:nth-of-type(-n+3)::after{
+    content:" - SOLD OUT!";
+    color: red;
+}
+
+main>ul>li:nth-of-type(4)::after{
+    content:" - ONLY 4 SPOTS AVAILABE";
+    color: red;
+}
+
+main>ul>li:nth-last-child(-n+2)::after{
+    content:" - AVAILABLE";
+    color: green;
+}
+
+main>ul{
+    padding-bottom: 15vh;
+}
